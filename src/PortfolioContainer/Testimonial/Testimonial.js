@@ -7,9 +7,6 @@ import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./Testimonial.css";
-import lady from "../../img/lady.png";
-import mike from "../../../src/img/mike.png";
-import man from "../../../src/img/man.png";
 import shape from "../../../src/img/shape-bg.png";
 
 import "./Testimonial.css";
@@ -89,9 +86,8 @@ export default function Testimonial(props) {
                     </ul>
                   </div>
                   <div className="client-info">
-                    <img src={lady} alt="no internet connection"></img>
                     <h5>Jonathan Assani</h5>
-                    <p>Product Manager</p>
+                    <p>Confex Makhalira</p>
                   </div>
                 </div>
               </div>
@@ -101,9 +97,8 @@ export default function Testimonial(props) {
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left" />
-                      The customer support was everything, from the engagement,
-                      in the decision making of the project up to coming up with
-                      the perfect website project and delivering on time.
+                      We thought we would have to go outside Malawi for a site that reflects our craftmanship,
+                      but Multicsystems Technologies they were able to deliver best quality services with cost effectivness.
                       <i className="fa fa-quote-right" />
                     </p>
                     <ul className="stars list-unstyled">
@@ -125,9 +120,8 @@ export default function Testimonial(props) {
                     </ul>
                   </div>
                   <div className="client-info">
-                    <img src={mike} alt="no internet connection"></img>
-                    <h5>Jonathan Assani</h5>
-                    <p>Products Manager</p>
+                    <h5>Victoria Mwafulirwa</h5>
+                    <p>Homes Industries</p>
                   </div>
                 </div>
               </div>
@@ -160,9 +154,8 @@ export default function Testimonial(props) {
                     </ul>
                   </div>
                   <div className="client-info">
-                    <img src={lady} alt="no internet connection"></img>
-                    <h5>Daisy Dominic</h5>
-                    <p>CEO InansGlobal</p>
+                    <h5>Tinashe Chidothe</h5>
+                    <p>Frank Cadear</p>
                   </div>
                 </div>
               </div>
