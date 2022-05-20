@@ -99,7 +99,7 @@ const Resume = (props) => {
         toDate={"2019"}
       />
       <ResumeHeading
-        heading={"Reed Online Cource CPD"}
+        heading={"Reed Online Course CPD"}
         subHeading={"CyberSecurity Level 1 to 5"}
         fromDate={"2015"}
         toDate={"2014"}
@@ -115,7 +115,7 @@ const Resume = (props) => {
       />
       <ResumeHeading
         heading={"BEDIR INTERNATIONAL HIGH SCHOOL"}
-        subHeading={"Malawi School Certificate of Examination (MSCE)"}
+        subHeading={"Malawi School Certificate of Examination"}
         fromDate={"2014"}
         toDate={"2010"}
       />
@@ -146,7 +146,9 @@ const Resume = (props) => {
           <span className="resume-description-text">
             - Integrated the 3rd party vendor APIs with backend services to
             allow our NBS Bank customers pay water, electricty, subscriptions
-            and bills on our mobile and branch platforms i.e SRWB,NRWB,Zuku{" "}
+            and bills on our mobile and branch platforms i.e SRWB,NRWB,Zuku,MANEB,MTL,LWB and more.
+            Developed REST APIS from scratch for our organisation that consume other APIs which incorporate 
+            the sending of SMS and Emails to our customers. {" "}
           </span>
           <br />
           <span className="resume-description-text">
@@ -205,6 +207,10 @@ const Resume = (props) => {
       <ResumeHeading
         heading="Sports"
         description="I like to do sports such as basketball, football and pool."
+      />
+        <ResumeHeading
+        heading="Documentaries"
+        description="I like to watch documentaries i.e spiritual, success and history ."
       />
     </div>,
   ];
