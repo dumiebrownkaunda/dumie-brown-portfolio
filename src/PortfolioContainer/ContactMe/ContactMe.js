@@ -58,8 +58,8 @@ export default function ContactMe(props) {
 
     emailjs.sendForm(data.service_id, data.template_id, e.target, data.user_id)
     .then((result) => {
-      setBanner(result.text);
-      toast.success(result.text);
+      setBanner("Thanks for contacting me, I will get back to you shortly🤝");
+      toast.success("Email has been sent successfully🙂");
       setBool(false);
 
       setName("");
