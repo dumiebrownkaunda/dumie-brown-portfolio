@@ -11,6 +11,7 @@ import "./ContactMe.css";
 import axios from "axios";
 import { toast } from "react-toastify";
 import FooterArrow from "../FooterArrow/FooterArrow";
+import emailjs from 'emailjs-com';
 
 export default function ContactMe(props) {
   let fadeInScreenHandler = (screen) => {
@@ -24,8 +25,13 @@ export default function ContactMe(props) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [phone, setPhone] = useState("");
   const [banner, setBanner] = useState("");
   const [bool, setBool] = useState(false);
+
+  const handlePhone =(e) => {
+    setPhone(e.target.value)
+  }
 
   const handleName = (e) => {
     setName(e.target.value);
@@ -38,30 +44,34 @@ export default function ContactMe(props) {
   };
   const submitForm = async (e) => {
     e.preventDefault();
-    try {
-      let data = {
-        name,
-        email,
-        message,
-      };
-      setBool(true);
-      const res = await axios.post(`/contact`, data);
-      if (name.length === 0 || email.length === 0 || message.length === 0) {
-        setBanner(res.data.msg);
-        toast.error(res.data.msg);
-        setBool(false);
-      } else if (res.status === 200) {
-        setBanner(res.data.msg);
-        toast.success(res.data.msg);
-        setBool(false);
 
-        setName("");
-        setEmail("");
-        setMessage("");
+    const data = {
+      service_id: 'service_q1962qt',
+      template_id: 'template_vj86d8m',
+      user_id: '3nVvO-j-_GznNx39L',
+      template_params: {
+          'username': 'Dumie Brown Kaunda',
+          'g-recaptcha-response': '03AHJ_ASjnLA214KSNKFJAK12sfKASfehbmfd...'
       }
-    } catch (error) {
-      console.log(error);
-    }
+  };
+    setBool(true);
+
+    emailjs.sendForm(data.service_id, data.template_id, e.target, data.user_id)
+    .then((result) => {
+      setBanner(result.text);
+      toast.success(result.text);
+      setBool(false);
+
+      setName("");
+      setEmail("");
+      setMessage("");
+      setPhone("");
+    },
+    (error) => {
+      setBanner(error.text);
+      toast.error(error.text);
+      setBool(false);
+    });
   };
 
   return (
@@ -102,15 +112,25 @@ export default function ContactMe(props) {
           <form onSubmit={submitForm}>
             <p>{banner}</p>
             <label htmlFor="name">Name</label>
-            <input
+            <input 
+              name="name"
               label="name"
               type="text"
               onChange={handleName}
               value={name}
             />
+             <label htmlFor="phone">Phone Number</label>
+            <input
+            name="phone"
+              label="phone"
+              type="text"
+              onChange={handlePhone}
+              value={phone}
+            />
 
             <label htmlFor="email">Email</label>
             <input
+            name="email"
               label="email"
               type="email"
               onChange={handleEmail}
@@ -119,6 +139,7 @@ export default function ContactMe(props) {
 
             <label htmlFor="message">Message</label>
             <textarea
+            name="message"
               label="message"
               type="text"
               onChange={handleMessage}
