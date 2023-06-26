@@ -28,7 +28,7 @@ export default function Testimonial(props) {
     animateOut: "bounceOutRight",
     dots: true,
     autoplay: true,
-    smartSpeed: 5000,
+    smartSpeed: 500,
     responsive: {
       0: {
         items: 1,
