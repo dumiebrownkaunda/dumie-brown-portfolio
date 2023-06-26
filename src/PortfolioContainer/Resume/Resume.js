@@ -99,7 +99,7 @@ const Resume = (props) => {
         toDate={"2019"}
       />
       <ResumeHeading
-        heading={"Reed Online Course CPD"}
+        heading={"UK Reed Online Course CPD"}
         subHeading={"CyberSecurity Level 1 to 5"}
         fromDate={"2015"}
         toDate={"2014"}
@@ -110,14 +110,14 @@ const Resume = (props) => {
         subHeading={
           "International General Certificate of Secondary Education (IGSCE)"
         }
-        fromDate={"2015"}
-        toDate={"2014"}
+        fromDate={"2014"}
+        toDate={"2015"}
       />
       <ResumeHeading
         heading={"BEDIR INTERNATIONAL HIGH SCHOOL"}
         subHeading={"Malawi School Certificate of Examination"}
-        fromDate={"2014"}
-        toDate={"2010"}
+        fromDate={"2010"}
+        toDate={"2014"}
       />
     </div>,
 

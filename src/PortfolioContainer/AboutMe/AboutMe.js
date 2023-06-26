@@ -14,7 +14,7 @@ export default function AboutMe(props) {
 
   const SCREEN_CONSTSANTS = {
     description:
-      "I am a Full Stack Developer specialising in different programming languages i.e C#, JavaScript, and PHP just to mention a few. I am currently working at NBS Bank PLC as a Software Developer and specialize in developing Web Applications, APIs and integrating our applications with other 3rd party service providers including water bills, electricity bills, tv and more.The logical extension of my education and work experience is my continued desire to create and re-purpose software to be sleek and powerful. I have an avid desire to code power Apps in languages like JavaScript, C#, Dart and Flutter, React, and more with a view toward making elegant full-stack solutions in application development. ",
+      "A MSc student in Computer Science & IT and a client-focused systems full stack software developer, with over 3 years of experience in web and mobile application design and development. Adept at managing all stages of the software development life cycle, from requirements gathering and feasibility studies to deployment and maintenance. Recognized for developing bespoke communication applications that optimize business performance and generate revenue for companies.Proficient with object-oriented programming languages, as well as algorithms, data structures and machine learning. Enjoys collaborating with colleagues and building of cross-functional applications working to provide greater platform for success of projects.",
     highlights: {
       bullets: [
         "Full Stack Web and Mobile development",

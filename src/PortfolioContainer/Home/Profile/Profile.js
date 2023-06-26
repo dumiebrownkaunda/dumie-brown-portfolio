@@ -22,6 +22,9 @@ function Profile() {
               <a href="https://www.multicsystems.com/">
                 <i className="fa fa-globe"></i>
               </a>
+              <a href="https://wa.me/message/YSRV5ZPD2VGMD1/">
+                <i className="fa fa-whatsapp"></i>
+              </a>
             </div>
           </div>
           <div className="profile-details-name">
@@ -38,13 +41,13 @@ function Profile() {
                 <Typical
                   loop={Infinity}
                   steps={[
-                    "Enthusiastic Dev 🔴",
+                    "Enthusiastic Dev",
                     1000,
-                    "Full Stack Developer 💻",
+                    "Full Stack Developer",
                     1000,
-                    "Cross Platform Dev 😎",
+                    "Cross Platform Dev",
                     1000,
-                    "Mobile App Dev 📱",
+                    "Mobile App Dev",
                     1000,
                   ]}
                 ></Typical>

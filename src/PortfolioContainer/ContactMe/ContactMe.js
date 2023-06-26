@@ -101,7 +101,10 @@ export default function ContactMe(props) {
           </a>{" "}
           <a href="https://www.multicsystems.com/">
             <i className="fa fa-globe"></i>
-          </a>
+          </a>{" "}
+          <a href="https://wa.me/message/YSRV5ZPD2VGMD1/">
+                <i className="fa fa-whatsapp"></i>
+              </a>
         </div>
         <h4>Hey there</h4>
         <div className="back-form">
