@@ -14,7 +14,7 @@ export default function AboutMe(props) {
 
   const SCREEN_CONSTSANTS = {
     description:
-      "An MSc student in Computer Science & IT and a client-focused full stack software developer, with over 3 years of experience in web and mobile application design and development. Adept at managing all stages of the software development life cycle, from requirements gathering and feasibility studies to deployment and maintenance. Recognized for developing bespoke communication applications that optimize business performance and generate revenue for companies.Proficient with object-oriented programming languages, as well as algorithms, data structures and machine learning. Enjoys collaborating with colleagues and building of cross-functional applications working to provide greater platform for success of projects.",
+      "An MSc student in Computer Science & IT and a client-focused full stack software developer, with over 3 years of experience in web and mobile application design and development. Adept at managing all stages of the software development life cycle, from requirements gathering and feasibility studies to deployment and maintenance. Recognized for developing bespoke communication applications that optimize business performance and generate revenue for companies. Proficient with object-oriented programming languages, as well as algorithms, data structures and machine learning. Enjoys collaborating with colleagues and building of cross-functional applications working to provide greater platform for success of projects.",
     highlights: {
       bullets: [
         "Full Stack Web and Mobile development",
